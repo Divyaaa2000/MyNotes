@@ -1,0 +1,65 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; 
+}
+
+.popup-content {
+    background-color: #fff; 
+    border-radius: 8px; 
+    padding: 20px; 
+    max-width: 400px; 
+    width: 100%; 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+}
+
+.popup-content h2 {
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+.popup-content input[type="email"],
+.popup-content input[type="password"] {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px;
+}
+
+.popup-content button[type="submit"],
+.popup-content button {
+    width: 100%; 
+    padding: 10px; 
+    background-color: rgb(0 168 45);
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+
+.popup-content button[type="submit"]:hover,
+.popup-content button:hover {
+    background-color:darkgreen; 
+}
+
+
+.popup-content button:last-child {
+    margin-top: 20px;
+    background-color: rgb(0 168 45) ; 
+}
+
+.popup-content button:last-child:hover {
+    background-color:  darkgreen; 
+}
