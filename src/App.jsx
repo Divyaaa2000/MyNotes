@@ -7,17 +7,17 @@ import AboutPage from './components/About/AboutPage'; // Import AboutPage compon
 import './App.css';
 
 const App = () => {
-  const mainContentRef = useRef(null); // Reference created
+  //const mainContentRef = useRef(null); // Reference created
 
   return (
     <Router>
-      <Header scrollToMain={() => mainContentRef.current.scrollIntoView({ behavior: 'smooth' })} />
+      <Header/>
       <Routes>
         <Route path="/about" element={<AboutPage />} />
         <Route path="/" element={
           <>
             {/* Render MainContent with different text */}
-            <MainContent ref={mainContentRef} title="What will you achieve today?" content="Remember everything and tackle any project with your notes, tasks, and schedule all in one place." />
+            <MainContent  title="What will you achieve today?" content="Remember everything and tackle any project with your notes, tasks, and schedule all in one place." />
             <MainContent title="24/7 access" content="No WiFi? No problem—offline mode means you can continue to use MyNote even when the internet cuts out." />
           </>
         } />

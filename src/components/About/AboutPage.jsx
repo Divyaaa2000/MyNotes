@@ -1,6 +1,4 @@
 import MainContent from "../Main/Main"
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 const AboutPage = ()=>{
     return(
         <div>
