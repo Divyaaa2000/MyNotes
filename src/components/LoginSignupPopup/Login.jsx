@@ -7,7 +7,7 @@ const Login = ({ closePopup }) => {
     return (
         <div className="popup-overlay">
             <div className="popup-content">
-                <span className="close-icon" style={{cursor:'pointer'}} onClick={closePopup}>&times;</span>
+                <span className="close-icon" style={{cursor:'pointer'}} onClick={closePopup}>X</span>
                 
                 <h2>{isLogin ? 'Login' : 'Signup'}</h2>
                 <form>
